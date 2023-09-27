@@ -1,66 +1,152 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <div class="dropdown">
-                <i class="fas fa-bars dropdown-icon"></i>
-                <div class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <div>
+          <h1 class="navbar-brand">Ashish Yadav</h1>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#about">About</a></li>
+          <li><a href="#my-works">Portfolio</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="home-content" id="home-page">
+      <div class="name">
+        <h1>Hi, I'm Ashish</h1>
+        <p>A app developer in training.</p>
+      </div>
+      <div class="angle-down-icon">
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+  </header>
+  <section class="about-me" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="left-content">
+          <div>
+            <h1 class="about-heading">About Me</h1>
+          </div>
+          <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png" alt="image" />
+          <p>
+            I am 21 year old, B.Tech-CSE student studying at SRM Institute of Science and Technology.
+            I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new
+            things; the more, the better.
+          </p>
+          <div class="work-arrow">
+            <p>
+              <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="right-content">
+            <div>
+              <h1 class="skills-heading">My Skills</h1>
             </div>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>My Name Is Ashish.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p> </p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p></p>
+            <div class="skills-bar">
+              <div class="bar">
+                <div class="info">
+                  <span>C++</span>
+                </div>
+                <div class="progress-line"><span class="Cpp"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Flutter</span>
+                  </div>
+                  <div class="progress-line"><span class="flutter"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>Dart</span>
+                    </div>
+                    <div class="progress-line"><span class="dart"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>HTML</span>
+                      </div>
+                      <div class="progress-line"><span class="html"></span></div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>CSS</span>
+                        </div>
+                        <div class="progress-line"><span class="css"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p></p>
+      </div>
+    </div>
+  </section>
+  <section id="my-works">
+    <div class="portfolio">
+      <div class="proj-heading">
+        <h1>Projects</h1>
+      </div>
+      <div class="portfolio-content container">
+        <div class="proj-1">
+          <img src="https://i.postimg.cc/R0w2y3cn/Screenshot-1639.png">
+          <div class="proj1-details">
+            <h2>Recipe App</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button><a href="https://github.com/Ashish1367/Recipe" target="blank">View source <i
+                  class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button><a href="https://ashish1367.github.io/Recipe/" target="blank">Try it Live <i
+                  class="fas fa-external-link-alt"></i></a>
+            </button>
+          </div>
         </div>
-    </section>
 
-    <section id="contact">
+        <div class="proj-2">
+          <img src="https://i.postimg.cc/fTx9y032/flutter-1.png">
+          <div class="proj2-details">
+            <h2>Flutter Todo app</h2>
+            <p>Build Using Dart,Flutter</p>
+            <button><a href="https://github.com/Ashish1367/Flutter-todo-app" target="blank">View source <i
+                  class="fas fa-external-link-alt"></i></a>
+            </button>
+          </div>
+    </div>
+  </section>
+  <div class="contact" id="contact-me">
+    <div class="container">
+      <div class="contact-content">
         <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; </p>
-    </footer>
-
-    <script src="script.js"></script>
+        <p class="mail">
+          Get in touch with me <i class="fas fa-arrow-right"></i> ayaduvanshi23@gmail.com
+        </p>
+        <p class="links">Or find me on:</p>
+        <a href="https://www.linkedin.com/in/ashish-y-63b329213/" target="blank"><i class="fab fa-linkedin">
+            Linkedin</i></a>
+       
+        <a href="https://github.com/Ashish1367" target="blank"><i class="fab fa-github"></i> Github</a>
+       
+        <a href="https://twitter.com/Ashish_4208" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
+        <a href="https://www.instagram.com/_.ashish.______/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
+
 </html>
